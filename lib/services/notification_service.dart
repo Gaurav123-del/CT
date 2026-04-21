@@ -1,7 +1,7 @@
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter/material.dart';
-import 'package:self_life_monitoring_app/screens/home_screen.dart';
 import '../main.dart'; // ✅ for navigatorKey
+import '../screens/main_monitoring_screen.dart';
 
 class NotificationService {
   static final FlutterLocalNotificationsPlugin _notificationsPlugin =
@@ -21,7 +21,7 @@ class NotificationService {
         // ✅ OPEN SCREEN WHEN NOTIFICATION CLICKED
         navigatorKey.currentState?.push(
           MaterialPageRoute(
-            builder: (_) => HomeScreen(contacts: []),
+            builder: (_) => MainMonitoringScreen(contacts: []),
           ),
         );
       },

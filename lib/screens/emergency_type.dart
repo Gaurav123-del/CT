@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import '../theme.dart';
 import '../models/emergency_contact.dart';
-import 'home_screen.dart';
+import 'main_monitoring_screen.dart';
 
 class EmergencyTypeScreen extends StatefulWidget {
   final List<EmergencyContact> contacts;
@@ -40,7 +40,7 @@ class _EmergencyTypeScreenState extends State<EmergencyTypeScreen> {
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
-        builder: (_) => HomeScreen(
+        builder: (_) => MainMonitoringScreen(
           contacts: widget.contacts,
           // later you can pass selectedTypes also
         ),
