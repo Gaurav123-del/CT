@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'alert_screen.dart';
+// import 'alert_screen.dart';
 
 
 class _T {
@@ -109,21 +109,21 @@ class _HomeScreenState extends State<HomeScreen>
     _addLog('Microphone active', isAlert: false);
 
     // Demo: trigger alert after 5 s
-    Future.delayed(const Duration(seconds: 5), () {
-      if (mounted && _isMonitoring) {
-        HapticFeedback.heavyImpact();
-        _addLog('⚠  Emergency keyword detected!', isAlert: true);
-        Navigator.push(
-          context,
-          PageRouteBuilder(
-            pageBuilder: (_, a, b) => const AlertScreen(),
-            transitionsBuilder: (_, a, b, child) =>
-                FadeTransition(opacity: a, child: child),
-            transitionDuration: const Duration(milliseconds: 400),
-          ),
-        );
-      }
-    });
+    // Future.delayed(const Duration(seconds: 5), () {
+    //   if (mounted && _isMonitoring) {
+    //     HapticFeedback.heavyImpact();
+    //     _addLog('⚠  Emergency keyword detected!', isAlert: true);
+    //     Navigator.push(
+    //       context,
+    //       PageRouteBuilder(
+    //         pageBuilder: (_, a, b) => const AlertScreen(),
+    //         transitionsBuilder: (_, a, b, child) =>
+    //             FadeTransition(opacity: a, child: child),
+    //         transitionDuration: const Duration(milliseconds: 400),
+    //       ),
+    //     );
+    //   }
+    // });
   }
 
   void _stopMonitoring() {
