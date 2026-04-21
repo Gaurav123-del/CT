@@ -18,7 +18,7 @@ class _T {
 
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({super.key, required List<dynamic> contacts});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();

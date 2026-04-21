@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:/theme.dart';
+import 'package:self_life_monitoring_app/theme.dart';
 import 'screens/login_screen.dart';
 import 'services/notification_service.dart';
 
